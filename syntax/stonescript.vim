@@ -41,6 +41,8 @@ syn keyword   ssFoeProperty   arachnid serpent insect machine
 syn match     ssFoeVar        'foe\(\.\(hp\|maxhp\|count\|armor\|distance\|debuffs\.count\)\)\?'
 syn match     ssSelfVar       '\(hp\|maxhp\|armor\|maxarmor\|loc\|time\|pickup\|pickup\.distance\|pos\.x\|face\|debuffs\.count\)'
 
+syn match     ssOverLength    /^.\{50,\}$/
+
 hi def link   ssComment       Comment
 
 hi def link   ssStatement     Statement
@@ -67,5 +69,6 @@ hi def link   ssItemVariant   Type
 hi def link   ssPrintLine     String
 
 hi def link   ssUnknown       Error
+hi def link   ssOverLength    Error
 
 let b:current_syntax = 'stonescript'
