@@ -13,8 +13,8 @@ syn match     ssComment       '//.*'
 syn keyword   ssStatement     equip equipL equipR loadout
 syn match     ssStatement     'activate potion'
 syn match     ssIf            '?'
-syn match     ssBoolOperator  '[!&|]'
-syn match     ssCompOperator  '[><=]'
+syn match     ssBoolOperator  /[!&|][ a-z]/he=e-1,me=e-1
+syn match     ssCompOperator  /[><=][ a-z0-9*]/he=e-1,me=e-1
 
 syn match     ssNumber        '\<\d\+\>'
 syn match     ssEnchantLvl    '[+]\(\d\|1[0-6]\)\>'
